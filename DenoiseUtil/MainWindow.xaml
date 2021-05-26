@@ -1,0 +1,57 @@
+﻿<Window x:Class="DenoiseUtil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DenoiseUtil"
+        mc:Ignorable="d"
+        Title="Image Denoising ToolBox" Height="450" Width="850">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="653*"/>
+            <ColumnDefinition Width="192*"/>
+        </Grid.ColumnDefinitions>
+        <Image Width="175" Margin="204,12,274,235.5"  
+               Name = "originalIamge"/>
+
+        <Image Margin="425,12,53,235.5" Width="175"  
+               Name = "noisyImage"/>
+
+        <Image Width="175" Margin="633,12,37,235.5"  
+               Name="calculatedDenoisedImage" Grid.ColumnSpan="2"  />
+
+        <Button Content="Browse &#xD;&#xA;Images" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
+                Width="125" Click="BrowseButton_Click" Height="38"/>
+
+        <Slider HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"
+                Height="22" Width="125" Maximum="450" Minimum="50" ValueChanged="Slider_ValueChanged" Name="VarianceSlider"/>
+
+        <Label Content="Noise Variance:" HorizontalAlignment="Left" Margin="10,70,0,0" 
+               VerticalAlignment="Top" RenderTransformOrigin="0.741,2.521" Width="125" Name="VarianceSliderLabel"/>
+        <Button Content="Denoise" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="125" Height="31"
+                Name ="DenoiseBTN" Click="DenoiseBTN_Click" IsEnabled="False"/>
+
+
+        <Popup Name="popup1" HorizontalAlignment="Left" Margin="10,437,0,-189.5"  
+               AllowsTransparency="True" VerticalAlignment="Top" Height="175" Width="300" Placement="Center">
+            <Grid  Background="Gray" Margin="10,10,-10,-10" Width="300" Height="175">
+
+                <Label Content="Progress:" Height="100" FontSize="20" Margin="90,0,90,100"/>
+                <ProgressBar HorizontalAlignment="Left"   
+                     Name="progressBar1" Height="25" 
+                     Minimum="0" Maximum="100" 
+                     VerticalAlignment="Center" Width="275" 
+                     Foreground="#FF3EA3EA" 
+                     Value="{Binding Path = progress}"
+                     ForceCursor="False" Margin="10,32,0,10"/>
+                <Button Name ="PopupBTN" Content="OK" Width="100" Height="40" Margin="40,115,60,10" Click="PopupBTN_Click"/>
+            </Grid>
+        </Popup>
+        <ComboBox Name="DenoisingSchemeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,233,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem IsSelected="True">Non Local Means</ComboBoxItem>
+            <ComboBoxItem>External Denoising</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Denoising Scheme" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" 
+               RenderTransformOrigin="-0.337,-0.397" Width="125"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\bin\Debug\DenoiseLib.dll
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\bin\Debug\DenoiseLib.pdb
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\obj\Debug\DenoiseLib.csprojAssemblyReference.cache
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\obj\Debug\DenoiseLib.csproj.CoreCompileInputs.cache
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\obj\Debug\DenoiseLib.dll
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\obj\Debug\DenoiseLib.pdb
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\bin\Debug\MathNet.Numerics.dll
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\bin\Debug\MathNet.Numerics.xml
+C:\Users\elaydahan\source\repos\DenoiseLib\DenoiseLib\obj\Debug\DenoiseLib.csproj.CopyComplete
