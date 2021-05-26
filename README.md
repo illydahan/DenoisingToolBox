@@ -9,5 +9,5 @@ https://www.ipol.im/pub/art/2011/bcm_nlm/article.pdf
 
 # Porject Structure:
 
-DenoisingLib  - Algorithm implementation.
+DenoisingLib  - Algorithm implementation.\n
 DenoisingUtil - Application implementation - Algorithm "driver". 
