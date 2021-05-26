@@ -47,7 +47,8 @@
                 <Button Name ="PopupBTN" Content="OK" Width="100" Height="40" Margin="40,115,60,10" Click="PopupBTN_Click"/>
             </Grid>
         </Popup>
-        <ComboBox Name="DenoisingSchemeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,233,0,0" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox Name="DenoisingSchemeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,233,0,0" 
+                  SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem IsSelected="True">Non Local Means</ComboBoxItem>
             <ComboBoxItem>External Denoising</ComboBoxItem>
         </ComboBox>

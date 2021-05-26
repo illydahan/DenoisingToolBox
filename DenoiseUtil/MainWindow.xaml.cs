@@ -200,9 +200,9 @@ namespace DenoiseUtil
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // not equal to Non local means scheme.
-            if (DenoisingSchemeComboBox.Text.Equals(denoisingScheme[0]) && isLoaded)
+            if (DenoisingSchemeComboBox.SelectedIndex != 0 && isLoaded)
             {
-                DenoisingSchemeComboBox.Text = denoisingScheme[0];
+                DenoisingSchemeComboBox.SelectedIndex = 0;
                 MessageBox.Show("This denoising scheme is not availible right now.");
             }
         }
