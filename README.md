@@ -1,9 +1,9 @@
 # DenoisingToolBox
 Implementation of image denoising algorithms using C#.
 
-The implementation iד done using MathDotNet lib, an open source library for linear algebra for .NET developers.
+The implementation is done using MathDotNet lib, an open source library for linear algebra for .NET developers.
 
-Non Local means denoising implementation is based of: 
+Non-local means denoising implementation is based of: 
 https://www.ipol.im/pub/art/2011/bcm_nlm/article.pdf
 
 
