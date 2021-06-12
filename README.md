@@ -7,7 +7,7 @@ Non-local means denoising implementation is based of:
 https://www.ipol.im/pub/art/2011/bcm_nlm/article.pdf
 
 
-# Porject Structure:
+# Porject Structure
 
 DenoisingLib  - Algorithm implementation.
 
